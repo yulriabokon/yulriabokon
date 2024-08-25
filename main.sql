@@ -15,7 +15,7 @@ GROUP BY primary_type
 ORDER BY cases DESC
 LIMIT 1
 
---least current crime in 2024
+--least common crime in 2024
 
 SELECT primary_type, COUNT(*) AS cases
 FROM `bigquery-public-data.chicago_crime.crime`
@@ -44,7 +44,7 @@ WHERE year = 2024
 GROUP BY primary_type
 ORDER BY arrests_made DESC
 
---count all crimes in 2024
+--count all crimes in 2024/2023/2022
 SELECT COUNT(*)
 FROM `bigquery-public-data.chicago_crime.crime`
 WHERE year=2024
@@ -58,7 +58,7 @@ FROM `bigquery-public-data.chicago_crime.crime`
 WHERE year=2022
 
 
---most common crime in 2023
+--most common crime in 2023/2022
 SELECT primary_type, COUNT(*) AS cases
 FROM `bigquery-public-data.chicago_crime.crime`
 WHERE year = 2023
@@ -66,7 +66,6 @@ GROUP BY primary_type
 ORDER BY cases DESC
 LIMIT 1
 
---2022
 SELECT primary_type, COUNT(*) AS cases
 FROM `bigquery-public-data.chicago_crime.crime`
 WHERE year = 2022
