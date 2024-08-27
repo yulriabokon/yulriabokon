@@ -1,7 +1,7 @@
 
 My project involves analyzing crime data from the Chicago Crime dataset using SQL queries on Google BigQuery. The queries aim to:
 
-Retrieve all crime data,count the total number of crimes overall and specifically for the years 2022, 2023, and 2024,
+retrieve all crime data,count the total number of crimes overall and specifically for the years 2022, 2023, and 2024,
 identify the most and least common crimes in 2024,find the three most common crimes on the streets in 2024,analyze the number of arrests made for each crime type in 2024,
 determine the most common crime types for the years 2022 and 2023.
 This project provides insights into crime trends and patterns in Chicago over recent years.
